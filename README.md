@@ -20,5 +20,7 @@ minimal asp.net core react app
     and scripts into the app directory. If you do this, you can’t go back!
 ````
 
+## todo
 
+[add proxy to web server in dev](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#proxying-api-requests-in-development)
 
