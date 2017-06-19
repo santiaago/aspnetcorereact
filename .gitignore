@@ -1,5 +1,6 @@
 **/wwwroot/build/*
 **/wwwroot/node_modules/*
+**/node_modules/*
 ###################
 # compiled source #
 ###################
