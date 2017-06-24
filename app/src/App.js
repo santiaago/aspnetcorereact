@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Values from './Values.js'
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <p className="App-intro">
           hello, world.
         </p>
+        <Values />
       </div>
     );
   }
