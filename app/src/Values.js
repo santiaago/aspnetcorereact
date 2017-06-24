@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import $ from 'jquery'
+import './Values.css'
 
 class Values extends Component{
     constructor(props){
@@ -23,8 +24,9 @@ class Values extends Component{
 
     render(){
         return <div>
-            <div onClick={() => this.getValues()}>get values</div>
-            <div>{this.state.values.map(x => x)}</div>
+            <div className='get-values' onClick={() => this.getValues()}>get values</div>
+            <div className='values'>
+                {this.state.values.map(x => <div className='value'>{x}</div>)}</div>
         </div>
 
     }
