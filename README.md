@@ -20,9 +20,9 @@ minimal [asp.net core](https://docs.microsoft.com/en-us/aspnet/core/) [react](ht
 
 ## Pieces:
 
-* web api server: `http://localhost:5000` handle any `/api/` requests.
+* web api server: `http://localhost:5000` handles any `/api/` requests.
 * web app (React app): `http://localhost:8080/`
-    * has **proxy** to web api serveR.
+    * has **proxy** to web api server in development mode.
 
 ## Web API server installation and development:
 
