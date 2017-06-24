@@ -5,22 +5,26 @@ minimal asp.net core react app
 * gitignore
 * create-react-app app
 
-````
- npm start
-    Starts the development server.
+## pieces:
 
-  npm run build
-    Bundles the app into static files for production.
+* api web server: `http://localhost:5000`
+* web app: `http://localhost:8080/`
+    * proxy to `http://localhost:5000`
 
-  npm test
-    Starts the test runner.
+# web API server installation and development:
 
-  npm run eject
-    Removes this tool and copies build dependencies, configuration files
-    and scripts into the app directory. If you do this, you can’t go back!
-````
+* go to `./aspnetcorereact`
+* run `dotnet restore`
+* run `dotnet build`
+* run `dotnet run`
 
-## todo
+This should build the web api server and serve it at `http://localhost:5000`
 
-[add proxy to web server in dev](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#proxying-api-requests-in-development)
+# web app installation and development:
 
+* go to `./aspnetcorereact/app/` and run `npm install`
+* run `npm start` to start the web app development server.
+
+# web app build for production:
+
+* in `./aspnetcorereact/app/` run `npm run build` to bundle the app into static files for production.
