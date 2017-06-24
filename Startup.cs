@@ -38,13 +38,14 @@ namespace aspnetcorereact
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+#if !DEBUG
             app.UseDefaultFiles();
             app.UseStaticFiles(new StaticFileOptions(){
                 FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "app", "build")),
                 RequestPath = ""
                 
             });
-
+#endif
             app.UseMvc();
         }
     }
